@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as Character from '@evercraft/ts-functional/character';
 
 @Component({
   selector: 'evercraft-root',
@@ -8,3 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular-implementation';
 }
+
+const char: Character.Type = Character.Default;
+
+console.log(char);
