@@ -92,6 +92,48 @@
           }
         }
       }
+    },
+    "how-to-jest": {
+      "root": "libs/how-to-jest",
+      "sourceRoot": "libs/how-to-jest/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/how-to-jest/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/how-to-jest"],
+          "options": {
+            "jestConfig": "libs/how-to-jest/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "functional-ts-ability-scores": {
+      "root": "libs/ts-functional/ability-scores",
+      "sourceRoot": "libs/ts-functional/ability-scores/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/ts-functional/ability-scores/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ts-functional/ability-scores"],
+          "options": {
+            "jestConfig": "libs/ts-functional/ability-scores/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

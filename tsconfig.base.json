@@ -15,8 +15,13 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@evercraft/ts-functional/character": ["libs/ts-functional/character/index.ts"],
-      "@evercraft/ts-functional/ability-scores": ["libs/ts-functional/ability-scores/index.ts"]
+      "@evercraft/how-to-jest": ["libs/how-to-jest/src/index.ts"],
+      "@evercraft/ts-functional/ability-scores": [
+        "libs/ts-functional/ability-scores/src/index.ts"
+      ],
+      "@evercraft/ts-functional/character": [
+        "libs/ts-functional/character/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

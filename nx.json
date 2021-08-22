@@ -30,6 +30,12 @@
   "projects": {
     "angular-implementation": {
       "tags": []
+    },
+    "how-to-jest": {
+      "tags": []
+    },
+    "functional-ts-ability-scores": {
+      "tags": []
     }
   }
 }
